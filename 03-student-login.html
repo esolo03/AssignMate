@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="05-style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpg" alt="AssignMate Logo" class="logo">
+    <h2 class="subtitle">Student Login</h2>
+    <form id="studentForm" class="form">
+      <input type="email" id="email" placeholder="Email (must end with @mycollege.edu)" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <a href="#" class="link">Forgot Password?</a>
+      <button type="submit" class="btn">Log In</button>
+    </form>
+    <p class="bottom-text">Don't have an account? <a href="#" class="link">Sign Up Here</a></p>
+  </div>
+
+  <script>
+    document.getElementById('studentForm').addEventListener('submit', function(e) {
+      const email = document.getElementById('email').value.trim();
+      if (!email.endsWith('@mycollege.edu')) {
+        e.preventDefault();
+        alert('Please use your @mycollege.edu email address.');
+      }
+    });
+  </script>
+</body>
+</html>
