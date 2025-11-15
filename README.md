@@ -5,11 +5,11 @@ AssignMate is a simple, user-friendly web application that helps students and te
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ---
 
-## 🧠 Development Info
+##  Development Info
 - Built with: **HTML, CSS, JavaScript**
 - IDE: **Visual Studio Code**
 - Version Control: **Git & GitHub**
